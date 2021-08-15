@@ -1,0 +1,30 @@
+http://wiki.ros.org/ROSberryPi/Installing%20ROS%20Kinetic%20on%20the%20Raspberry%20Pi
+https://answers.ros.org/question/327497/compiling-ros-on-raspberry-pi-4-with-buster-problem-with-libboost158/
+
+https://howchoo.com/g/ztbhyzfknze/how-to-install-pocketsphinx-on-a-raspberry-pi
+to install gtts need to use "pip install soupsieve==1.9.6" for python 2.7
+sudo apt-get remove pulseaudio
+
+ls -l src/head_pkg/src/controllInterface.py
+sudo chmod a+x src/head_pkg/src/controllInterface.py
+
+. devel/setup.bash
+catkin_make
+
+roslaunch head_pkg head_control.launch
+
+. run.sh
+
+rostopic echo /head
+
+#make a pyc file
+import py_compile
+py_compile.compile('abc.py')
+
+
+
+//------------ to run controller node needs to be as roo because of pygame
+// so run this in another console
+sudo su
+. devel/setup.bash
+rosrun head_pkg controllInterfaceRev2.py

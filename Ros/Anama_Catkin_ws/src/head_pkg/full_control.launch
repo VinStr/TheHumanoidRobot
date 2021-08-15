@@ -1,0 +1,6 @@
+<launch>
+  <!-- <node name="controllInterface" pkg="head_pkg" type="controllInterfaceRev2.py" output="screen" launch-prefix="sudo"/> -->
+  <node name="neckInterface" pkg="head_pkg" type="NeckInterface.py" output="screen"/>
+  <node name="speechNode" pkg="head_pkg" type="speechNode.py" output="screen"/>
+  <node name="headInterface" pkg="head_pkg" type="HeadInterface.py" output="screen"/>
+</launch>

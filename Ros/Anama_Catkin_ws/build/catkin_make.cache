@@ -1,0 +1,2 @@
+head_pkg
+-DCATKIN_DEVEL_PREFIX=/home/pi/Desktop/anamatronic/Ros/Anama_Catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/pi/Desktop/anamatronic/Ros/Anama_Catkin_ws/install -G Unix Makefiles

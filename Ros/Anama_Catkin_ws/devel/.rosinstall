@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/pi/Desktop/anamatronic/Ros/Anama_Catkin_ws/devel/setup.sh
